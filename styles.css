@@ -1,0 +1,82 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+img {
+    width:100%;
+}
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    /* background-image: url('./media/faizan.jpg'); */
+    min-height: 100%;
+    margin-top: 18%;
+}
+
+.bgimg-1 iframe {
+    border: 5px solid #333; /* Use dark gray color for the border */
+    border-radius: 10px; /* Add border radius for a rounded appearance */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.bgimg-1 iframe:hover {
+    transform: scale(1.05); /* Increase the size of the video on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Enhance the shadow effect on hover */
+}
+
+/* Second image (projects) */
+.bgimg-2 {
+    background-image: url("media/projects.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("media/ny.jpeg");
+    min-height: 400px;
+}
+
+.w3-wide {
+    letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+
+.w3-modal-content {
+    background-color: white;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
