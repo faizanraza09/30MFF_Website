@@ -1,3 +1,4 @@
+
 // Change style of navbar on scroll
 window.onscroll = function () { myFunction() };
 function myFunction() {
@@ -19,6 +20,8 @@ function toggleFunction() {
     }
 }
 
+
+// formspree form submission
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the form from submitting normally
 

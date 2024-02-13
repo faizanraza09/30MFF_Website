@@ -11,51 +11,57 @@ h6 {
 body,
 html {
     height: 100%;
-    color: #777;
+    color: white;
     line-height: 1.8;
+}
+
+body{
+    background-image: url("media/beach3.jpg");
+    background-attachment: fixed;
 }
 img {
     width:100%;
 }
 /* Create a Parallax Effect */
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+.premier,
+.projects_img,
+.contact_img {
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    /* background-image: url('./media/faizan.jpg'); */
+/* Premier video */
+.premier {
     min-height: 100%;
     margin-top: 18%;
 }
 
-.bgimg-1 iframe {
-    border: 5px solid #333; /* Use dark gray color for the border */
+.premier iframe {
+    border: 5px solid white; /* Add a white border */
     border-radius: 10px; /* Add border radius for a rounded appearance */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
-.bgimg-1 iframe:hover {
+.premier iframe:hover {
     transform: scale(1.05); /* Increase the size of the video on hover */
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Enhance the shadow effect on hover */
 }
 
 /* Second image (projects) */
-.bgimg-2 {
+.projects_img {
     background-image: url("media/projects.jpg");
+    /* background-color: black; */
     min-height: 400px;
 }
 
 /* Third image (Contact) */
-.bgimg-3 {
+.contact_img {
     background-image: url("media/ny.jpeg");
-    min-height: 400px;
+    /* background-color: black; */
+    height: 200px;
 }
 
 .w3-wide {
@@ -70,12 +76,16 @@ img {
     background-color: white;
 }
 
+@keyframes wave {
+    from {width: 0;}
+    to {width: width;}
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
+    .premier,
+    .projects_img,
+    .contact_img {
         background-attachment: scroll;
         min-height: 400px;
     }
