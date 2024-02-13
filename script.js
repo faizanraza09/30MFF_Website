@@ -22,7 +22,7 @@ function toggleFunction() {
 
 
 // formspree form submission
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the form from submitting normally
 
     // Get form data
@@ -36,12 +36,12 @@ document.getElementById("contactForm").addEventListener("submit", function(event
             'Accept': 'application/json'
         }
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        document.getElementById("contactForm").reset(); // Reset form fields
-        document.getElementById("successMessage").style.display = "block"; // Show success message
-    })
-    .catch(error => console.error('There was an error!', error));
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            document.getElementById("contactForm").reset(); // Reset form fields
+            document.getElementById("successMessage").style.display = "block"; // Show success message
+        })
+        .catch(error => console.error('There was an error!', error));
 });
