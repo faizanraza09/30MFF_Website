@@ -12,6 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -47,16 +51,16 @@
     <div class="premier w3-display-container w3-padding-64 " id="home">
 
         <div class="w3-display-middle">
-            <iframe src="https://drive.google.com/file/d/1fj348eAXZzmkcqEYrU7N07wm_GdKq7sW/preview" width="1280"
-                height="720"
+            <iframe src="https://drive.google.com/file/d/1fj348eAXZzmkcqEYrU7N07wm_GdKq7sW/preview" width="1066"
+                height="600"
                 allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </div>
 
     <!-- About the Movie Section -->
-    <div class="w3-content w3-container w3-padding-64" style="margin-top: 10%" id="about_movie">
-        <h3 class="w3-center">About the Adventure: Car Ride to the Beach</h3>
+    <div class="w3-content w3-container w3-padding-64" style="margin-top: 6%" id="about_movie">
+        <h3 class="w3-center">ABOUT THE ADVENTURE: CAR RIDE TO THE BEACH</h3>
         <p>
             "Car Ride to the Beach" is all about the excitement of a spontaneous late-night adventure. Shot on an
             iPhone, it's like taking a trip with friends, feeling the wind in your hair and the thrill of the open road.
@@ -85,28 +89,30 @@
         <h3 class="w3-center">ABOUT THE EXPLORER</h3>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
-                <img src="media/portrait.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="300" style="margin-top: 13%;">
+                <img src="media/portrait.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="300">
             </div>
 
-            <div class="w3-col m6 w3-padding-large">
+            <div class="w3-col m6 w3-padding-large" style="margin-top:2%">
                 <p>
-                    Welcome to my website. I'm Faizan Raza, a Pakistani junior majoring in computer science and minoring in
-                    economics and interactive media at New York University Abu Dhabi. If I were to describe myself in one, well 
-                    actually two words, I'd say I'm a "self learner." I believe self-learning has not only made me independent 
-                    but also equipped me with the skills to navigate life's complexities. It has enabled me to adapt to new 
-                    environments and pick up new skills on the go.
-                    
-                    I'm deeply passionate about programming and data. I enjoy exploring new technologies and working on projects
-                    that have the potential to make a positive impact in the world. Currently, I'm engaged as a deep learning 
-                    researcher in the eBrain Lab, focusing on mitigating potential adversarial attacks on existing deep learning models, 
-                    particularly in applications such as self-driving cars and person detection cameras.
-                    
-                    In addition to my academic pursuits, I'm an avid video game enthusiast. While I love playing games, I've also dabbled in 
-                    game development, although I must admit that playing them remains my preferred activity. When it comes to watching movies, 
-                    I find joy in the classics, marveling at the craftsmanship behind their cinematography. However, I must confess: I've 
-                    got a soft spot for the Marvel Cinematic Universe. Despite knowing that Martin Scorsese might poke fun at me for 
-                    enjoying both, I can't resist the excitement of superhero adventures. It's a delicate balance between appreciating 
-                    traditional cinematic experiences and indulging in the spectacle of modern-day blockbusters.</p>
+                    Welcome to my website. I'm Faizan Raza, a Pakistani junior majoring in computer science and minoring
+                    in
+                    economics and interactive media at New York University Abu Dhabi. If I were to describe myself in
+                    one, well
+                    actually two words, I'd say I'm a "self learner." I believe self-learning has not only made me
+                    independent
+                    but also equipped me with the skills to navigate life's complexities. I'm deeply passionate about
+                    programming and data. I enjoy exploring new technologies and working on projects
+                    that have the potential to make a positive impact in the world.
+                    </br>
+                    In addition to my academic pursuits, I'm an avid video game enthusiast. While I love playing games,
+                    I've also dabbled in
+                    game development, although I must admit that playing them remains my preferred activity. When it
+                    comes to watching movies,
+                    I find joy in the classics, marveling at the craftsmanship behind their cinematography. However, I
+                    must confess: I've
+                    got a soft spot for the Marvel Cinematic Universe. Despite knowing that Martin Scorsese might poke
+                    fun at me for
+                    enjoying both, I can't resist the excitement of superhero adventures.</p>
             </div>
         </div>
         <!-- <p class="w3-large w3-center w3-padding-16">Here are my skills:</p>
@@ -132,50 +138,117 @@
         </div>
     </div>
 
-    <!-- Container (projects Section) -->
+    <!-- Container (Projects Section) -->
     <div class="w3-content w3-container w3-padding-64">
+        <!-- Carousel -->
+        <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#projectsCarousel" data-slide-to="1"></li>
+                <li data-target="#projectsCarousel" data-slide-to="2"></li>
+                <li data-target="#projectsCarousel" data-slide-to="3"></li>
+                <li data-target="#projectsCarousel" data-slide-to="4"></li>
+                <li data-target="#projectsCarousel" data-slide-to="5"></li>
+                <li data-target="#projectsCarousel" data-slide-to="6"></li>
+                <li data-target="#projectsCarousel" data-slide-to="7"></li>
+              </ol>
+            <div class="carousel-inner">
 
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <a href="https://github.com/faizanraza09/MedSync" target="_blank"><img src="media/medsync.png"
-                        class="w3-hover-opacity" alt="MedSync"></a>
-            </div>
-            <div class="w3-col m3">
-                <a href="https://github.com/faizanraza09/canteen-management-express" target="_blank">
-                    <img src="media/canteen.png" class="w3-hover-opacity" alt="Canteen Management Web Application"></a>
-            </div>
-            <div class="w3-col m3">
-                <a href="https://github.com/faizanraza09/NYC-Airbnb-Analysis" target="_blank">
-                    <img src="media/airbnb.png" class="w3-hover-opacity" alt="NYC Airbnb Analysis"></a>
-            </div>
-            <div class="w3-col m3">
-                <a href="https://github.com/faizanraza09/Adversarial-Attacks" target="_blank">
-                    <img src="media/hacker.png" class="w3-hover-opacity" alt="Adversarial Attack Implementation"></a>
-            </div>
-        </div>
+                <!-- Project 1 -->
+                <div class="carousel-item active w3-hover-opacity">
+                    <a href="https://github.com/faizanraza09/MedSync" target="_blank">
+                        <img src="media/medsync.png" class="d-block w-25 mx-auto " alt="MedSync">
+                        <div class="carousel-caption d-block">
+                            <h3 class="mb-0">MedSync</h3>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <a href="https://drive.google.com/file/d/1WcUKyYMq5-qOZWMHa-gYAAxHrjqjHqPw/view?usp=sharing"
-                    target="_blank"><img src="media/seaweed.png" class="w3-hover-opacity"
-                        alt="Seaweed Generation Photoshop Project"></a>
-            </div>
+                <!-- Project 2 -->
+                <div class="carousel-item w3-hover-opacity">
+                    <a href="https://github.com/faizanraza09/canteen-management-express" target="_blank">
+                        <img src="media/canteen.png" class="d-block w-25 mx-auto"
+                            alt="Canteen Management Web Application">
+                        <div class="carousel-caption d-block">
+                            <h3 class="mb-0">Canteen Management Web Application</h3>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="w3-col m3">
-                <a href="https://github.com/faizanraza09/Whatsapp-Analytics" target="_blank">
-                    <img src="media/whatsapp.png" class="w3-hover-opacity" alt="Whatsapp Analytics Application"></a>
-            </div>
-            <div class="w3-col m3">
-                <a href="https://github.com/faizanraza09/Snake-Game" target="_blank">
-                    <img src="media/snake.png" class="w3-hover-opacity" alt="Python Snake Game"></a>
-            </div>
+                <!-- Project 3 -->
+                <div class="carousel-item w3-hover-opacity">
+                    <a href="https://github.com/faizanraza09/NYC-Airbnb-Analysis" target="_blank">
+                        <img src="media/airbnb.png" class="d-block w-25 mx-auto" alt="NYC Airbnb Analysis">
+                        <div class="carousel-caption d-block">
+                            <h3 class="mb-0">NYC Airbnb Analysis</h3>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="w3-col m3">
-                <a href="https://github.com/faizanraza09/Zelda" target="_blank">
-                    <img src="media/nintendo.png" style="width:200px; height:200px;" class="w3-hover-opacity"
-                        alt="Python Zelda Game"></a>
+                <!-- Project 4 -->
+                <div class="carousel-item w3-hover-opacity">
+                    <a href="https://github.com/faizanraza09/Adversarial-Attacks" target="_blank">
+                        <img src="media/hacker.png" class="d-block w-25 mx-auto"
+                            alt="Adversarial Attack Implementation">
+                        <div class="carousel-caption d-block">
+                            <h3 class="mb-0">Adversarial Attacks Implementation</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="carousel-item w3-hover-opacity">
+                    <a href="https://drive.google.com/file/d/1WcUKyYMq5-qOZWMHa-gYAAxHrjqjHqPw/view?usp=sharing"
+                        target="_blank">
+                        <img src="media/seaweed.png" class="d-block w-25 mx-auto"
+                            alt="Seaweed Generation Photoshop Project">
+                        <div class="carousel-caption d-block ">
+                            <h3 class="mb-0">Seaweed Generation Photoshop Project</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="carousel-item w3-hover-opacity">
+                    <a href="https://github.com/faizanraza09/Whatsapp-Analytics" target="_blank">
+                        <img src="media/whatsapp.png" class="d-block w-25 mx-auto" alt="Whatsapp Analytics Application">
+                        <div class="carousel-caption d-block">
+                            <h3 class="mb-0">Whatsapp Analytics Application</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="carousel-item w3-hover-opacity">
+                    <a href="https://github.com/faizanraza09/Snake-Game" target="_blank">
+                        <img src="media/snake.png" class="d-block w-25 mx-auto" alt="Python Snake Game">
+                        <div class="carousel-caption d-block">
+                            <h3 class="mb-0">Python Snake Game</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="carousel-item w3-hover-opacity">
+                    <a href="https://github.com/faizanraza09/Zelda" target="_blank">
+                        <img src="media/nintendo.png" style="width:200px; height:200px;"
+                            class="d-block w-25 h-25 mx-auto" alt="Python Zelda Game">
+                        <div class="carousel-caption d-block">
+                            <h3 class="mb-0">Python Zelda Game</h3>
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
+            <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
@@ -243,7 +316,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/0fe4736e61.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

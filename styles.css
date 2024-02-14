@@ -42,7 +42,7 @@ img {
 /* Premier video */
 .premier {
     min-height: 100%;
-    margin-top: 18%;
+    margin-top: 14%;
 }
 
 .premier iframe {
@@ -85,6 +85,42 @@ img {
 
 .w3-modal-content {
     background-color: white;
+}
+
+.carousel .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    margin-top: 1%;
+  }
+
+  .carousel-control-prev,
+.carousel-control-next {
+    font-size: 2rem; /* Increase the font size */
+    color: white; /* Change the arrow color */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Set the background color */
+    border-radius: 50%; /* Make it circular */
+    padding: 10px; /* Increase padding for better visibility */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #ccc; /* Change arrow color on hover */
+}
+
+/* Adjust the margin to bring carousel arrows closer */
+.carousel-control-prev {
+    margin-left: 20%; /* Adjust the negative margin to bring it closer */
+}
+
+.carousel-control-next {
+    margin-right: 20%; /* Adjust the negative margin to bring it closer */
 }
 
 /* @keyframes wave {
